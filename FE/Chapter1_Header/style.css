@@ -1,0 +1,58 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+body {
+  background: #e1e1e1;
+}
+/* width chiều rộng của thẻ */
+/* px: giá trị cố định không thay đổi khi màng hình thay đổi
+  vw:  */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tren {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.tren-trai {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tren-phai {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.duoi {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #434242;
+}
+
+/* lấy các thẻ li là con của class menu */
+.menu li:hover {
+  color: orangered;
+  cursor: pointer;
+}
