@@ -1,0 +1,5 @@
+pip install uvicorn[all] 
+pip install fastapi[all] 
+pip install sqlalchemy
+pip install "python-jose[cryptography]"
+pip install "passlib[bcrypt]"
