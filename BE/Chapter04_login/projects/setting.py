@@ -34,21 +34,12 @@ app.add_middleware(
 
 database = dict(
     drivername='mssql',
-    username='Tên đăng nhập',
-    password='mật khẩu',
-    host='host là tên server',
-    database='tên database',
+    username='sa',
+    password='123',
+    host='IT03\TIEN',
+    database='KDCODE',
     query={"driver": 'SQL Server Native Client 11.0'}
 )
-
-# database = dict(
-#     drivername='mssql',
-#     username='sa1',
-#     password='123',
-#     host='IT03\TIEN',
-#     database='TBSL_ERP',
-#     query={"driver": 'SQL Server Native Client 11.0'}
-# )
 
 
 url = URL.create(**database)
