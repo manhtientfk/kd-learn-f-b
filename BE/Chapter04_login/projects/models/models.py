@@ -29,6 +29,7 @@ class Choice(Base):
     id = Column(Integer(),primary_key = True)
     title = Column(NVARCHAR(length=20))
     anwser = Column(NVARCHAR(length=500))
+    question = Column(Integer(),ForeignKey("question.questionCode"))
     isdelete = Column(Boolean(),default = False)
 
 
@@ -38,7 +39,6 @@ class Question(Base):
     title = Column(NVARCHAR(length=20))
     question = Column(NVARCHAR(length=500))
     result = Column(NVARCHAR(length=500))
-    choise = Column(Integer(),ForeignKey("choice.id"))
     point = Column(Float())
     isdelete = Column(Boolean(),default = False)
 
