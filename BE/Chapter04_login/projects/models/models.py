@@ -55,12 +55,9 @@ class Exam_Question(Base):
 class DeThi(Base):
     __tablename__ = "deThi"
     maDeThi = Column(Integer(),primary_key = True)
-    
     tenDeThi = Column(NVARCHAR(length=20))
     note = Column(NVARCHAR(length=500))
     isdelete = Column(Boolean(),default = False)
-
-
 
 class Subject(Base):
     __tablename__ = "subject"
